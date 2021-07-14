@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+* {
+    background-color: peru;
+}
+
+li {
+    color: red !important; 
+}
+
+li {
+    color: burlywood;
+}

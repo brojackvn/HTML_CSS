@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f8 -shop</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        
+        .header {
+            width: 100%;
+            height: 150px;
+            background-color: aqua;
+            position: fixed;
+            top: 0;
+        }
+
+        .box {
+            margin-top: 200px;
+            width: 100%;
+            height: 120px;
+            background-color: black;
+            position: relative;
+        }
+
+        .box-child {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.6);
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+
+        ul {
+            height: 2000px;
+        }
+        li:first-child {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            font-size: 20px;
+            color: red;
+        }
+
+        li:nth-of-type(2) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> HEADER</div>
+    <div class="box">
+        <p style="color: aqua;">TEST ABSOLUTE</p>
+        <div class="box-child"></div>
+    </div>
+    <h1>CSS Position</h1>
+    <ul>
+        <li><b>relative: tương đối: Không phụ thuộc vị trí nào khác. Tức là:</b></li>
+        <p>position: relative/ Cố định vị trí đang đứng làm gốc tọa độ. Sau đó dịch chuyển lên xuống trái phải tùy ý và đè lên các nội dung khác.
+        <br> Nếu không set up thuộc tính này thì khi dịch lên xuống trái phải cái nội dung khác dịch theo
+        <br> top left right bottom có khi dùng position
+        <br> go live để xem</p>
+        <li>absolute: tuyệt đối</li>
+        <p>Phụ thuộc thẻ cha gần nhất chứa position làm gốc tọa độ. Thường làm: thanh menu chứa menu thông báo</p>
+        <li>fixed   : phụ thuộc khung trình duyệt</li>
+        <p>Giữ 1 nội dung nào đó đứng yên. Ví dụ như: Thanh header của facebook đứng yên là do: position: fixed;</p>
+        <li>sticky  : vị trí bám dính, phụ thuộc khung trình duyệt. Khuyến cáo: không nên dùng, ít trình duyệt hỗ trợ</li>
+        <p>Thích hợp cho làm các trang thông tin điện tử của chính phủ. Trên là hình ảnh rồi đến header. 
+           Khi kéo scroll xuống thì hình ảnh biến mất và header dữ nguyên như fixed.
+           Khi học JS kết hợp với fixed thì làm được như thế này. Nên vào xem video để nhớ</p>
+    </ul>
+</body>
+</html>

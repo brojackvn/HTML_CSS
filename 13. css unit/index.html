@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f8 - shop</title>
+
+    <style>
+        .box {
+            width: 50%;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div>
+        <h1>1. Absolute units</h1>
+        <p> Kích thước cố định. Dù kích thước màn hình như thế nào nó cũng không thay đổi</p>
+        <ul>
+            <li>px</li>
+            <p>Tùy theo độ phân giải màn hình thì 1px nó tương ứng với k điểm trên màn hình</p>
+            <li>pt</li>
+            <li>cm</li>
+            <li>mm</li>
+            <li>inch</li>
+            <li>pc</li>
+        </ul>
+    
+        <h1>2. Relative units</h1>
+        <p> Kích thước tương đối - động. Thay đổi dựa vào đối tượng chứa nó</p>
+        <ul>
+            <li>%</li>
+            <p> = số phần trăm của thẻ gần nhất chứa nó. Khác với vw vh</p>
+            <li>rem</li>
+            <p>Phụ thuộc vào kích thước html. Ví dụ: html {font-size: 20px} h1 {font-size: 2rem tức là 40px}</p>
+            <li>em</li>
+            <p>Dựa vào Thẻ tag từ trong ra chứa nó. Cho đến khi gặp thẻ tag được CSS. Lúc này nó như rem (nhưng thay vì html thì đó là thẻ cha gần nhất được css)</p>
+            <p><b>Thông thường thì hay dùng rem hơn vì dễ kiểm soát. Và thường đặt font-size của html là 100% thì size cố định là 16px. Kĩ thuật này khi responsive</b></p>
+            <li>vw</li>
+            <p>viewport-width. Ví dụ: {width: 50vw}. là 50% chiều rộng trình duyệt</p>
+            <li>vh</li>
+            <p>Tương tự vw</p>
+            <li>vmin</li>
+            <li>vmax</li>
+            <li>ex</li>
+            <li>ch</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

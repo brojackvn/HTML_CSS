@@ -1,0 +1,26 @@
+# BEM
+- Là tiêu chuẩn đặt tên class khi viết class
+
+## Ý nghĩa
+- Viết tắt: Block Element Modifier
+- Block: Khối
+- Element: Thành phần trong khối 
+- Modifier: Bổ sung ý nghĩa cho "Block" hoặc "Element"
+
+## Tại sao phải dùng BEM ?
+- Mỗi người đặt một kiểu
+- Tránh các thành viên trong team đặt class trùng nhau, CSS đè lên nhau
+
+## Cú pháp
+- .block 
+- .block__element
+- .block--modifier 
+- .block__element--modifier
+
+## Tính ứng dụng
+- Xây dựng layout Website
+- Xây dựng thành phần trên Website
+
+## Ưu điểm
+- Tính rõ ràng
+- 
