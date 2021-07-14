@@ -18,13 +18,13 @@
             height: 100vh;
             background-image: url(https://image-us.24h.com.vn/upload/3-2019/images/2019-08-21/1566377068-404f22ba2bd88c4a89bc903ec48903ee.jpg);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: contain;
             border: 20px dashed gray;
             padding: 20px;
             box-sizing: border-box;
             background-origin: content-box;
             background-position: bottom; /*Nếu 1 tham số: Tham số thứ 2 mặc định là center */ /*Nếu top 20px right 20px: Cách top 20, right 20*/ /*Nếu 30px 50px thì 30 so với trái 50 so với trên*/
-            /* contain: chọn max{width, height} làm width và height của bức ảnh, đảm bảo hình không bị che khuất bức ảnh, bức ảnh đầy đủ*/
+            /* contain: chọn max{width, height} làm width và height của bức ảnh, đảm bảo hình không bị che khuất, bức ảnh đầy đủ khi thu phong*/
             /* cover: chọn max{width, height} làm width và height của bức ảnh, mặc dù ảnh bị che khuất. Ngược với contain. Đảm bảo màn hình không bị khoảng trắng*/
             /* background-origin: như background-clip. Nhưng background-clip dùng cho background-color. Còn background-origin dùng cho background-image*/
         }
